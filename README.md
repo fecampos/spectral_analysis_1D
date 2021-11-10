@@ -35,7 +35,13 @@ title('time serie at X');
 
 ```MATLAB
 [fk Ik] = welch_method(squeeze(xi(20,20,:)),100,0.1,1,0,'t');
+
 ```
 ![alt text](https://github.com/fecampos/spectral_analysis_1D/blob/main/example_time_spectrum.png)
 
 # Getting started welch_method.m for spatial data:
+```MATLAB
+[fkx Ikx] = welch_method(squeeze(xi(1:40,20,1)),20,0.1,25,0.1,'s');
+[fky Iky] = welch_method(squeeze(xi(20,1:40,1)'),20,0.1,25,0.1,'s');
+```
+![alt text](https://github.com/fecampos/spectral_analysis_1D/blob/main/example_spatial_spectrum.png)
