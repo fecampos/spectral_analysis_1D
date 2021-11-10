@@ -7,7 +7,7 @@ function [fk Ik] = welch_method(data,window,overlap,delta,numzeros,type)
 %               window,   (number of points of the windows as an integer)      %
 %               overlap,  (overlapping data, [0-1])                            %
 %               delta,    (spatial variation, in km, m, degrees, etc)          %
-%               numzeros, (number of added zeros, [0-1])                       %
+%               numzeros, (number of added zeros, [0-1] no matter in 't')      %
 %               type,     (time->'t' or spatial->'s')                          %
 %                                                                              %
 % output:       fk wavenumber, size: nf = round(M/2)                           %
