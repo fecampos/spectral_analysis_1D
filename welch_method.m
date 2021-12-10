@@ -51,7 +51,7 @@ elseif  type == 't'
     ak = ak + fft(detrend(data(1+L*(i-1)-D:i*L)).*hanning(L+D),M);
   end
   ak   = ak/M;
-  Ik   = abs(ak)*M^2/(L*U);
+  Ik   = abs(ak).^2*M^2/(L*U);
   index = 1:0.5*M;
   fk   = index/(M*delta); Ik = Ik(index);
 
